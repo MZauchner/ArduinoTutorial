@@ -1,17 +1,7 @@
-int cnt=0;
 void setup() {
- 
-  Serial.begin(9600);
-  
+  Serial.begin(9600); // use the same baud-rate as the python side
 }
- 
 void loop() {
-  
-  Serial.print("I am Counting to: ");
-  Serial.print(cnt);
-  Serial.println(" Mississippi.");
-  cnt=cnt+1;
+  Serial.println("Hello world from Ardunio!"); // write a string
   delay(1000);
-  
 }
-
